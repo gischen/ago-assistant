@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>AGOL Assistant</title>
+		<title>ArcGIS Online Assistant</title>
         
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+        <script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
+        <link rel="stylesheet" href="css/jquery-ui-1.9.2.css" />
 		<link type="text/css" href="lib/bootstrap/css/bootstrap.min.css" rel="Stylesheet" />
 		<link type="text/css" href="css/styles.css" rel="Stylesheet" />
 		
@@ -72,6 +72,8 @@
                     <h3 id="copyModalLabel">Copy my content</h3>
                 </div>
                 <div class="modal-body">
+                    <p>Login to the destination account. You will then be able to select which items to copy.</p>
+                    <br>
                     <form>
                     <p>Select the destination:</p>
                     <div class="input-append">
@@ -81,7 +83,7 @@
                             <button type="button" id="destinationPortalBtn" class="btn" data-toggle="button">Portal for ArcGIS</button>
                         </div>
                     </div>
-                    <br><br>
+                    <br>
                     <p>Enter your credentials:</p>
                         <div id="destinationLoginForm" class="control-group" style="float: left;">
                             <input class="span2" type="text" placeholder="username" id="destinationUsername">
@@ -247,9 +249,9 @@
 		</script>
 
         <!-- loaded here to speed up the page load -->
-        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script src="lib/jquery-ui-1.9.2.min.js"></script>
 		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://raw.github.com/janl/mustache.js/master/mustache.js"></script>
+        <script type="text/javascript" src="lib/mustache.js"></script>
 		<script type="text/javascript" src="js/agol.js"></script>
         <script type="text/javascript" src="js/trackers.js"></script>
         
